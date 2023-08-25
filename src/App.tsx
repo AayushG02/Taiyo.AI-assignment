@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Importing all the pages
+import Contact from "./pages/Contact";
+import CreateContact from "./pages/CreateContact";
+import ChartsMaps from "./pages/ChartsMaps";
+import Sidebar from "./components/Sidebar";
+import NotFound from "./pages/NotFound";
+
+import { ContactProvider } from "./context/ContactContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContactProvider>
+      <div className="App flex">
+        <Router>
+          <Sidebar />
+          <Routes>
+            <Route path="/" element={<Contact />} />
+            <Route path="/createcontact" element={<CreateContact />} />
+            <Route path="/chartsmaps" element={<ChartsMaps />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </div>
+    </ContactProvider>
   );
 }
 
