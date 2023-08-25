@@ -12,6 +12,8 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![React-Leaflet](https://img.shields.io/badge/React--Leaflet-88C057?style=for-the-badge&logo=React&logoColor=white&labelColor=88C057)](https://react-leaflet.js.org/)
 
+## Live Link: <a href="https://taiyoai-assessment.netlify.app/">click here!</a>
+
 ## Pages:
 - `/` Contact Page
 - `/chartsmaps` Chart page
