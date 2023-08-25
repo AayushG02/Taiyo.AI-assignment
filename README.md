@@ -18,6 +18,12 @@
 - `/` Contact Page
 - `/chartsmaps` Chart page
 
+## API Endpoints:
+Worldwide data of cases: https://disease.sh/v3/covid-19/all
+Country Specific data of cases: https://disease.sh/v3/covid-19/countries
+Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
