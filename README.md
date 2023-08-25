@@ -1,6 +1,6 @@
 # Taiyo-ai Assessment
 
-## Tech stacks used:
+## Tech stacks used
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 ![React-Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&amp;logo=react-router&amp;logoColor=white)
 [![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
@@ -12,13 +12,13 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![React-Leaflet](https://img.shields.io/badge/React--Leaflet-88C057?style=for-the-badge&logo=React&logoColor=white&labelColor=88C057)](https://react-leaflet.js.org/)
 
-## Live Link: <a href="https://taiyoai-assessment.netlify.app/">click here!</a>
+## Live Link <a href="https://taiyoai-assessment.netlify.app/">click here!</a>
 
 ## Pages:
 - `/` Contact Page
 - `/chartsmaps` Chart page
 
-## API Endpoints:
+## API Endpoints
 Worldwide data of cases: https://disease.sh/v3/covid-19/all
 
 Country Specific data of cases: https://disease.sh/v3/covid-19/countries
