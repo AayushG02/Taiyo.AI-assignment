@@ -1,11 +1,13 @@
 import React, { createContext, useReducer } from "react";
 import { StateType, ActionType } from "../models/state";
 
+// Initial state for the context
 const initialState: StateType = {
   users: [],
   editContact: null,
 };
 
+// Context creation
 export const ContactContext = createContext<{
   state: StateType;
   dispatch: React.Dispatch<ActionType>;
@@ -14,6 +16,7 @@ export const ContactContext = createContext<{
   dispatch: () => {},
 });
 
+// Reducer function to handle state updates
 export const reducer = (state: StateType, action: ActionType) => {
   switch (action.type) {
     case "CREATE":
@@ -21,13 +24,11 @@ export const reducer = (state: StateType, action: ActionType) => {
         ...state,
         users: [...state.users, action.payload],
       };
-
     case "EDIT":
       return {
         ...state,
         editContact: action.payload,
       };
-
     case "DELETE":
       return {
         ...state,
@@ -56,6 +57,7 @@ export const reducer = (state: StateType, action: ActionType) => {
   }
 };
 
+// Provider component that wraps the app with the context
 export const ContactProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {

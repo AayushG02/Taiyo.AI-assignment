@@ -6,20 +6,25 @@ import markerIcon from "../assets/marker.png";
 import axios from "axios";
 import { CountryInterface } from "../models/state";
 
+// Function to fetch data
 const fetchData = async () => {
   const res = await axios.get("https://disease.sh/v3/covid-19/countries");
   return res.data;
 };
 
+// Map component
 const Map = () => {
+  // Fetching country data using react-query
   const { data, error, isLoading } = useQuery("countryData", fetchData);
+
+  // Custom marker icon for the map
   const customMarker = L.icon({
     iconUrl: markerIcon,
     iconSize: [20, 30],
     iconAnchor: [15, 30],
   });
-  console.log(data);
 
+  // Handling loading and error states
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Something went wrong...</div>;
 

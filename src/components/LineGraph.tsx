@@ -12,6 +12,7 @@ import {
   Tooltip,
 } from "chart.js";
 
+// Registering chart elements and scales
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -21,6 +22,8 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+// Function to fetch data
 const fetchData = async () => {
   const res = await axios.get(
     "https://disease.sh/v3/covid-19/historical/all?lastdays=all"
@@ -29,10 +32,14 @@ const fetchData = async () => {
 };
 
 const LineGraph = () => {
+  // Fetching data using react-query
   const { data, error, isLoading } = useQuery("data", fetchData);
+
+  // Handling loading and error states
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Something went wrong...</div>;
 
+  // Constructing chart data
   const chartData = {
     labels: Object.keys(data.cases),
     datasets: [
@@ -46,6 +53,8 @@ const LineGraph = () => {
       },
     ],
   };
+
+  // Rendering the chart
   return (
     <div className="w-full pt-8">
       <h2 className="flex items-center justify-center w-11/12 mx-auto bg-blue-100 h-16 border border-blue-700 text-blue-700 border-b-0 rounded-md rounded-b-none text-4xl lg:text-3xl md:text-2xl">

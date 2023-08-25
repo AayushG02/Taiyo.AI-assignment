@@ -6,15 +6,17 @@ import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import InsertChartOutlinedIcon from "@mui/icons-material/InsertChartOutlined";
 
+// Sidebar component
 const Sidebar = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
+  // Toggles the visibility of the sidebar
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
 
+  // Get the current location
   const location = useLocation().pathname;
-  console.log(location);
 
   return (
     <div
