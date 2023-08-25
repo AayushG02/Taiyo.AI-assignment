@@ -30,7 +30,7 @@ const Map = () => {
 
   return (
     <div className="w-full h-full mb-12">
-      <h2 className="flex items-center justify-center w-11/12 mx-auto bg-blue-100 h-16 border border-blue-700 text-blue-700 border-b-0 rounded-md rounded-b-none text-4xl">
+      <h2 className="flex items-center justify-center w-11/12 mx-auto bg-blue-100 h-16 border border-blue-700 text-blue-700 border-b-0 rounded-md rounded-b-none text-2xl sm:text-4xl">
         World Map
       </h2>
       <div className="w-11/12 mx-auto border border-blue-700 rounded-md rounded-t-none ">

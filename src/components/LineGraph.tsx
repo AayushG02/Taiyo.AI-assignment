@@ -57,7 +57,7 @@ const LineGraph = () => {
   // Rendering the chart
   return (
     <div className="w-full pt-8">
-      <h2 className="flex items-center justify-center w-11/12 mx-auto bg-blue-100 h-16 border border-blue-700 text-blue-700 border-b-0 rounded-md rounded-b-none text-4xl lg:text-3xl md:text-2xl">
+      <h2 className="flex items-center justify-center w-11/12 mx-auto bg-blue-100 h-16 border border-blue-700 text-blue-700 border-b-0 rounded-md rounded-b-none text-2xl sm:text-4xl">
         Corona Cases
       </h2>
       <div className="bg-white border border-blue-700 w-11/12 mx-auto rounded-md rounded-t-none">
